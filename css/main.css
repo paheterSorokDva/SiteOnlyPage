@@ -270,4 +270,81 @@ nav li ahover {
     justify-content: space-between;
     text-align: left;
   }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 3em;
+    width: 90;
+  }
+  .hero-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .hero-cta {
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+  ul.features-list {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.features-list li {
+    font-size: 1.4em;
+  }
+  ul.features-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+  .features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+  .testimonials-section ul {
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-right iframe {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: 40em;
+  }
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url(/images/dots.svg) no-repeat;
+    left: 9em;
+    top: 45em;
+  }
 }/*# sourceMappingURL=main.css.map */
