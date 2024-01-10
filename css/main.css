@@ -96,6 +96,8 @@ section.features-section {
 ul.features-list {
   margin: 0;
   padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 ul.features-list li {
   font-size: 1.1em;
@@ -104,7 +106,7 @@ ul.features-list li {
   position: relative;
 }
 ul.features-list li:before {
-  content: "";
+  content: " ";
   left: -2em;
   position: absolute;
   width: 20px;
@@ -209,4 +211,63 @@ nav li ahover {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.go-premium-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.go-premium-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.css.map */
